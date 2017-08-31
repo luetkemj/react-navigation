@@ -225,16 +225,6 @@ describe('ScenesReducer', () => {
     expect(scenes).toEqual([
       {
         index: 0,
-        isActive: false,
-        isStale: true,
-        key: 'scene_1',
-        route: {
-          key: '1',
-          routeName: '',
-        },
-      },
-      {
-        index: 0,
         isActive: true,
         isStale: false,
         key: 'scene_3',
@@ -260,16 +250,6 @@ describe('ScenesReducer', () => {
     const scenes = testTransition([['1', '2'], ['3'], ['2']]);
 
     expect(scenes).toEqual([
-      {
-        index: 0,
-        isActive: false,
-        isStale: true,
-        key: 'scene_1',
-        route: {
-          key: '1',
-          routeName: '',
-        },
-      },
       {
         index: 0,
         isActive: true,
